@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<html>
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title itemprop="headline">Создать превью для видео на ютуб</title>
+    <meta itemprop="description" name="description" content="Бесплатный сервис чтобы создать првью для ютубе онлайн 🖼 Теперь вы будете знать как быстро создать превью для видео на YouTube 🔴">
+    <meta itemprop="keywords" name="keywords" content="сделать превью, превью, превью для видео, как сделать превью на видео, как сделать обложку для видео, превью для ютуба, превью в фотошопе">    
+    <meta property="og:title" content="Создать превью для видео на Ютуб 🖼 eFrame" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.eframe.me" />
+    <meta property="og:image" content="images/illustrations/eprove_check.png" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header__box wrap">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/icons/logotype.png" alt="eFrame логотип" />
+                </a>
+            </div>
+            <nav class="header__nav">
+                <div class="menu--toggle">МЕНЮ</div>
+                <ul class="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <li class="menu__item">
+                        <a itemprop="url" href="blog.html">БЛОГ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="modalReport" class="modalWindow">
+        <div class="modal__title">
+            <h3>Сообщить о проблеме</h3>
+            <p>
+                Если сервис дал сбой, сообщите нам об этом!
+                Просто напишите, что случилось и нажмите "Проблема". Мы сразу же изучим в чем дело.
+            </p>
+        </div>
+        <div class="modal__form">
+            <form action="">
+                <textarea name="comment" placeholder="Написать отзыв о полученом результате"></textarea>
+                <input type="hidden" name="alert" value="report">
+                <input type="submit" value="ПРОБЛЕМА" class="button closeBG" />
+            </form>
+        </div>
+        <div class="modal__social">
+            <h3>Пожелания</h3>
+            <p>
+                Если хотите предложить улучшения по работе сервиса - напишите нам в социальные сети.
+            </p>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#" rel="nofollow" class="social__item_telegram" target="_blank"></a>
+                </li>
+                <li class="social__item">
+                    <a href="mailto:eprovesmusic@gmail.com" class="social__item_email"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlayModal"></div>
+
+    <div id="createSave" class="modalSave modalWindow">
+        <div class="modal__content content-modal">
+            <div class="content-modal__item item-madal">
+                <div class="item-modal__canvas canvas-modal">
+                    <img src="images/editor/eframe.png" alt="Готовое превью" class="canvas-modal__img">
+                </div>
+                <div class="item-modal__button button-modal">
+                    <button id="" class="button-modal__main button">
+                        <span class="option__save_text">ВЫБРАТЬ ФОРМАТ</span>
+                    </button>
+                    <button id="" class="button-modal__option button">
+                        <span class="option__save_text">jpeg</span>
+                    </button>
+                    <button id="" class="button-modal__option button">
+                        <span class="option__save_text">png</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__social">
+            <h3>Пожелания</h3>
+            <p>
+                Если хотите предложить улучшения по работе сервиса - напишите нам в социальные сети.
+            </p>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#" rel="nofollow" class="social__item_instragram" target="_blank"></a>
+                </li>
+                <li class="social__item">
+                    <a href="#" rel="nofollow" class="social__item_telegram" target="_blank"></a>
+                </li>
+                <li class="social__item">
+                    <a href="#" rel="nofollow" class="social__item_youtube" target="_blank"></a>
+                </li>
+                <li class="social__item">
+                    <a href="mailto:eprovesmusic@gmail.com" class="social__item_email"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="main__box">
+            <div class="main__content wrap">
+                <h1>
+                    СОЗДАТЬ ПРЕВЬЮ ДЛЯ 
+                    <span class="mark">
+                        ВИДЕО НА YOUTUBE
+                    </span>
+                </h1>
+                <div class="editor-box">
+                    <div class="editor-box__input input-form">
+                        <form id="CreateForm" method="" action="">
+                            <input type="text" id="CreateBy" name="CreateBy" placeholder="Название ролика" autocomplete="off" maxlength="254" />
+                            <input type="submit" id="CreateSubmit" value="СОЗДАТЬ" />
+                        </form>
+                    </div>
+                    <div class="editor-box__result result-editor">
+                        <div class="result-editor__list">
+                            <div class="result-editor__item item-editor">
+                                <div class="item-editor__canvas canvas-editor">
+                                    <img class="canvas-editor__img" src="images/editor/eframe.png" >
+                                </div>
+                                <div class="item-editor__control control-editor">                                    
+                                    <div id="things-slider" class="control-editor__things things-slider sliders--hidden">
+                                        <div class="things-toggle__things things-toggle">
+                                            <div class="things-toggle__item item-things">
+                                                <button href="#effects-slider" class="item-things__btn item-things__btn--active">
+                                                    эффект
+                                                </button>
+                                                <button href="#font-slider" class="item-things__btn item-things__font">
+                                                    шрифт
+                                                </button>
+                                                <!-- <button href="#background-slider" class="item-things__btn">
+                                                    фон 
+                                                </button>  -->
+                                            </div>
+                                        </div>
+                                        <div class="sliders-editor__things things-slider">
+                                            <div class="things-slider__effect effect-slider">
+                                                <div id="effects-slider" class="effect-slider__list swiper-wrapper slider-things--hidden">
+                                                    <div class="effect-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option1.png" alt="">
+                                                    </div>
+                                                    <div class="effect-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option2.png" alt="">
+                                                    </div>
+                                                    <div class="effect-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option3.png" alt="">
+                                                    </div>
+                                                    <div class="effect-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option4.png" alt="">
+                                                    </div>
+                                                    <div class="effect-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="things-slider__font font-slider">
+                                                <div id="font-slider" class="things-slider__list swiper-wrapper slider-things--hidden">
+                                                    <div class="things-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_style/1.png" alt="">
+                                                    </div>
+                                                    <div class="things-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_style/2.png" alt="">
+                                                    </div>
+                                                    <div class="things-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_style/3.png" alt="">
+                                                    </div>
+                                                    <div class="things-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_style/4.png" alt="">
+                                                    </div>
+                                                    <div class="things-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_style/5.png" alt="">
+                                                    </div>
+                                                </div>          
+                                            </div> 
+                                            <!-- <div  class="things-slider__background background-slider">
+                                                <div id="background-slider" class="background-slider__list swiper-wrapper slider-things--hidden">
+                                                    <div class="background-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_background/option1.png" alt="">
+                                                    </div>
+                                                    <div class="background-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_background/option2.png" alt="">
+                                                    </div>
+                                                    <div class="background-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_background/option3.png" alt="">
+                                                    </div>
+                                                    <div class="background-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_background/option4.png" alt="">
+                                                    </div>
+                                                    <div class="background-slider__item swiper-slide">
+                                                        <img src="images/option_preview/option_background/option5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>                                                                     
+                                    </div>
+                                    
+                                    <div id="style-slider" class="slider-editor__style style-slider sliders--hidden">
+                                        <div class="style-slider__style style-toggle">
+                                            <div class="style-toggle__item item-style">
+                                                <button href="#color-slider" class="item-style__btn item-style__color item-style__btn--active">
+                                                    стиль
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="style-slider__color color-slider ">
+                                            <div id="color-slider" class="color-slider__list swiper-wrapper style-slider__item--hidden">
+                                                <div class="color-slider__item swiper-slide">
+                                                    <img src="images/option_preview/result_preview/option1.png" alt="">
+                                                </div>
+                                                <div class="color-slider__item swiper-slide">
+                                                    <img src="images/option_preview/result_preview/option2.png" alt="">
+                                                </div>
+                                                <div class="color-slider__item swiper-slide">
+                                                    <img src="images/option_preview/result_preview/option3.png" alt="">
+                                                </div>
+                                                <div class="color-slider__item swiper-slide">
+                                                    <img src="images/option_preview/result_preview/option4.png" alt="">
+                                                </div>
+                                                <div class="color-slider__item swiper-slide">
+                                                    <img src="images/option_preview/result_preview/option5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-editor__toggle toggle-slider">                                        
+                                        <div class="toggle-slider_item item-toggle">
+                                            <button href="#things-slider" class="item-toggle__btn control__button_things item-toggle__btn--active">ВЕЩИ</button>
+                                            <button href="#style-slider" class="item-toggle__btn control__button_style">СТИЛЬ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-box__feedback feedback-editor">
+                        <div class="feedback-editor__item item-feedback">
+                            <button id="Report" class="item-feedback__report button">СООБЩИТЬ</button>
+                            
+                            <button id="Save" class="item-feedback__save button">
+                                <span class="material-icons">
+                                    download
+                                </span>
+                                <span class="option__save_text">СКАЧАТЬ</span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="response">
+            <div class="response__what">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">превью</span> ЧТО ЭТО?
+                        </span>
+                    </h2>
+                    <p class="response__paragraph">
+                            Это обложка для youtube, которую видит зритель до того как кликнуть
+                        на видео. Чтобы вы получили качественное и кликабельное превью, мы
+                        предлагаем формат загрузки 1280 на 720px, такой формат превью
+                        самый оптимальный для видео на youtube и вы можете его скачать
+                        бесплатно.
+                        Мы предоставляем множество бесплатных шаблонов и стилей для
+                        получения уникального и крутого превью.
+                    </p>
+                    <!-- UKRAINE <p class="response__paragraph">
+                        Медіа платформи, що опублікували матеріали про eProves.
+                        <a href="#">Отримати медіа-кіт для преси</a>
+                    </p> -->
+                    <!-- ENGLISH <p class="response__paragraph">
+                        Media platforms that published materials about eProves.
+                        <a href="#">Get a media-kit for the press</a>
+                    </p> -->
+                    <!-- <div class="response__media media-response">
+                        <img src="images/preview/preview1.jpeg" class="media-response__item" alt="">
+                        <img src="images/preview/preview2.jpeg" class="media-response__item" alt="">
+                        <img src="images//preview/preview3.jpeg" class="media-response__item" alt="">
+                    </div> -->
+                </div>
+            </div>
+          <!--  <div class="response__how">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">eFrame</span> КАК ПОЛЬЗОВАТЬСЯ
+                        </span>
+                    </h2>
+                    <p class="response__paragraph">
+                        eFrame - это онлайн-сервис с помощью которого вы можете
+                        создать кликабельное превью для видео на youtube. 
+                        Данный сервис вы можете использовать абсолютно бесплатно и без регистрации.
+                    </p>
+                    <div class="response__content before-line">
+                        <div class="response__item">
+                            <img src="images/illustrations/youtube_copy_url.png" alt="youtube link illustration">
+                            <h3></h3>
+                            <p>
+                        
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <img src="images/illustrations/eprove_check.png" alt="eproves button illustration">
+                            <h3></h3>
+                            <p>
+                              
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <img src="images/illustrations/eprove_permission.png" alt="license illustration">
+                            <h3></h3>
+                            <p>
+                               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+          <!--  <div class="response__price" id="price">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">how</span> MUCH
+                        </span>
+                    </h2>
+                    <p class="response__paragraph">
+                        This is for you if you like high quality music, you are law-abiding
+                        and you belong to one of these types of users below.
+                        <strong>Hurry up! Make sure you subscribe and get a discount until the end of March 2021!</strong>
+                    </p>
+                    <div class="price__box">
+                        <div class="price__item">
+                            <div class="price__plan">
+                                <img src="images/illustrations/illustration_instagram_user.png" class="price__plan_illustration" alt="иллюстрация рисунок инстаграм пользователь">
+                                <h3 class="price__plan_title">Instagrammer</h3>
+                                <div class="price__plan_cost">
+                                    free
+                                    <span class="cost--forever">forever</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="price__benefits">
+                                <li class="price__benefits_item">6 checks / day</li>
+                                <li class="price__benefits_item">100 library songs</li>
+                                <li class="price__benefits_item">save music history</li></li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <form action="index.html" id="Form_ProductHunt">
+                                    <input type="email" placeholder="music@eproves.com" autocomplete="email" required />
+                                    <input type="hidden" name="price" value="0">
+                                    <input type="submit" value="WANNA!" class="button" />
+                                </form>
+                                <li class="price__benefits--warning">сейчас в разработке</li>
+                            </ul>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__plan sale sale-50">
+                                <img src="images/illustrations/illustration_bloger.png" class="price__plan_illustration" alt="иллюстрация рисунок блогер">
+                                <h3 class="price__plan_title">Blogger</h3>
+                                <div class="price__plan_cost">
+                                    <span class="cost--line-throught">
+                                        $10
+                                    </span>
+                                    $5<span class="cost--month"> / mon</span>
+                                    <span class="cost--forever">forever</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="price__benefits">
+                                <li class="price__benefits_item">200 checks / mon</li>
+                                <li class="price__benefits_item">1.000 library songs</li>
+                                <li class="price__benefits_item">save music history</li>
+                                <li class="price__benefits_item">download music</li>
+                                <li class="price__benefits_item">similar queries</li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <li class="price__benefits_item benefits--empty">&#10006;</li>
+                                <form action="index.html" id="Form_ProductHunt">
+                                    <input type="email" placeholder="music@eproves.com" autocomplete="email" required />
+                                    <input type="hidden" name="price" value="5">
+                                    <input type="submit" value="WANNA!" class="button" />
+                                </form>
+                                <li class="price__benefits--warning">сейчас в разработке</li>
+                            </ul>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__plan sale sale-50">
+                                <img src="images/illustrations/illustration_video_editor.png" class="price__plan_illustration" alt="иллюстрация рисунок монтажер">
+                                <h3 class="price__plan_title">Video editor</h3>
+                                <div class="price__plan_cost">
+                                    <span class="cost--line-throught">
+                                        $20
+                                    </span>
+                                    $1o<span class="cost--month"> / mon</span>
+                                    <span class="cost--forever">forever</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="price__benefits">
+                                <li class="price__benefits_item">1000 checks / mon</li>
+                                <li class="price__benefits_item">10.000+ library songs</li>
+                                <li class="price__benefits_item">save music history</li>
+                                <li class="price__benefits_item">download music</li>
+                                <li class="price__benefits_item">similar queries</li>
+                                <li class="price__benefits_item">100% search accuracy</li>
+                                <li class="price__benefits_item">search by .mp3</li>
+                                <form action="index.html" id="Form_ProductHunt">
+                                    <input type="email" placeholder="music@eproves.com" autocomplete="email" required />
+                                    <input type="hidden" name="price" value="10">
+                                    <input type="submit" value="WANNA!" class="button" />
+                                </form>
+                                <li class="price__benefits--warning">сейчас в разработке</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price__calc">
+                        <div class="calc__box">
+                            <h3 class="calc__title">
+                                Калькулятор дохода
+                            </h3>
+                            <p class="calc__description">
+                                Онлайн калькулятор посчитает заработок с YouTube-канала,
+                                который вы получите используя музыку без авторских прав
+                            </p>
+                            <form class="calc__input">
+                                <input type="number" class="calc__input_views" placeholder="Просмотров на канале за месяц" step="1000" data-scale="2" />
+                                <input type="submit" id="CalcRevenue" class="button" value="ПОСЧИТАТЬ" />
+                            </form>
+                            <div class="calc__result">
+                                <p class="calc__description">
+                                    Когда вы начнете монетизировать свои видеоролики с 
+                                    помощью свободной музыки, тогда ваш прогнозованный доход с рекламы составит 
+                                </p>
+                                <h3 class="calc__title">
+                                    Доход: <span class="calc__title--revenue">150-300$</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="response__who">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">кто</span> ПОЛЬЗОВАТЕЛИ
+                        </span>
+                    </h2>
+                    <p class="response__paragraph">
+                        Тебе к нам, если ты любишь качественную музыку, чист перед
+                        законом и относишься к одному из этих видов пользователей.
+                        <a href="#">Разбор примера: где найти музыку для монтажа без авторских прав</a>
+                    </p>
+                    <div class="response__content">
+                        <div class="response__item">
+                            <img src="images/illustrations/illustration_instagram_user.png" alt="иллюстрация рисунок инстаграм пользователь">
+                            <h3>Обитатель Инстаграм</h3>
+                            <p>
+                                ищешь крутую музыку для инстаграм видео о том
+                                как на выходных тусили с друзьями 
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <img src="images/illustrations/illustration_bloger.png" alt="иллюстрация рисунок блогер">
+                            <h3>Блогер</h3>
+                            <p>
+                                музыка для тебя - способ общения с аудиторией,
+                                она придает атмосферы
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <img src="images/illustrations/illustration_video_editor.png" alt="иллюстрация рисунок монтажер">
+                            <h3>Монтажер</h3>
+                            <p>
+                                самое тяжелое найти трек под монтаж,
+                                еще труднее найти трек без авторских прав
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="response__benefits">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">какие</span> ПРЕИМУЩЕСТВА
+                        </span>
+                    </h2>
+                    <div class="response__content">
+                        <div class="response__item">
+                            <span class="material-icons">
+                                access_alarm
+                            </span>
+                            <h3>Быстро</h3>
+                            <p>
+                                Процесс создания занимает до одной минуты.
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <span class="material-icons">
+                                photo_filter
+                            </span>
+                            <h3>Результативно</h3>
+                            <p>
+                                Впечатлающее и эффектвиное превью можно создать прямо сейчас.
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <span class="material-icons">
+                                attach_money
+                            </span>
+                            <h3>Бесплатно</h3>
+                            <p>
+                                Создать классное и кликабельное превью
+                                можно абсолютно бесплатно.
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="response__item">
+                            <span class="material-icons">
+                                engineering
+                            </span>
+                            <h3>Без опыта</h3>
+                            <p>
+                                Больше никаких утомительных
+                                редакторов, только результат.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="response__blog">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                        <span class="title-response__content">
+                            <span class="title-response__flow">блог</span> ПРИМЕРЫ
+                        </span>
+                    </h2>
+                    <p class="response__paragraph">
+                        В нашем блоге есть статьи с кейсами подбора музыки для популярных
+                        блогеров без авторской музыки
+                    </p>
+                    <div class="response-slider__blog blog-slider">
+                        <div  class="blog-slider__list swiper-wrapper before-line">
+                            <a href="how_to_create_a_preview_for_youtube.html" class="blog-slider__item item-blog swiper-slide">
+                                <div class="item-blog__image">
+                                    <img src="images/blog/preview/preview-how_to_do.jpg" alt="" />
+                                </div>
+                                <h4>Как сделать превью для видео на YouTube</h4>
+                            </a>
+                            <a href="#" class="blog-slider__item item-blog swiper-slide">
+                                <div class="item-blog__image">
+                                    <img src="images/blog/preview/preview-how_to_check_music_copyright.jpg" alt="" />
+                                </div>
+                                <h4>превью в фотошопе и онлайн редакторе - сложно и долго, решение есть! </h4>
+                            </a>
+                            <a href="#" class="blog-slider__item item-blog swiper-slide">
+                                <div class="item-blog__image">
+                                    <img src="images/blog/preview/preview-how_to_choose_music.jpg" alt="" />
+                                </div>
+                                <h4>Как попасть в топ поиска YouTube: превью, название.</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer itemtype="http://schema.org/WPFooter">
+        <div class="footer__box wrap">
+            <div class="footer__basic basic-footer">
+                <div class="basic-footer__logo">
+                    <a href="index.html">
+                        <img src="images/icons/logotype.png" class="basic-footer__img" alt="eframe логотип">
+                    </a>
+                    <span class="basic-footer__copyright">Все права защищены 2021 ©</span>
+                    <meta itemprop="copyrightYear" content="2020">
+                    <meta itemprop="copyrightHolder" content="eFrame.me">
+                </div>
+                <a href="#header" class="basic-footer__scroll-to-up">НАВЕРХ</a>
+            </div>
+            <!-- <ul class="language">
+                <li class="language__item">
+                    <a href="/" data-lang="en">ENGLISH</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="uk">УКРАЇНСЬКА</a>
+                </li>
+                <li class="language__item lang--current">
+                    <a href="/" data-lang="ru">РУССКИЙ</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="es">ESPANOL</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="de">DEUTCHLAND</a>
+                </li>
+            </ul> -->
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://t.me/eproves" rel="nofollow" class="social__item_telegram" target="_blank">TELEGRAM</a>
+                </li>
+                <li class="social__item">
+                    <a href="mailto:eprovesmusic@gmail.com" class="social__item_email">EMAIL</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS and CSS files -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/interface.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
