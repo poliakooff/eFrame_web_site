@@ -421,10 +421,7 @@
 
         .title-response__flow {
           position: absolute;
-          bottom: -5px;
-          left: -30px;
           font-size: 90px;
-          color: #d7dcdc;
           z-index: -1;
         }
       }
@@ -468,11 +465,11 @@
   }
 
   .response__what {
+    background-color: @color_body;
     .response__box {
       .response__title {
         color: @color_secondary;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb,
-          0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 6px 1px rgba(0, 0, 0, 0.1),
           0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
           0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
           0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -480,7 +477,7 @@
         .title-response__flow {
           color: @color_white;
           left: -130px;
-          bottom: 10px;
+          bottom: 0px;
           align-self: center;
           margin-top: -18px;
           transition: all 0.3s ease;
@@ -528,6 +525,7 @@
       align-items: center;
     }
   }
+  
   .response__price {
     background-color: @color_secondary-dark;
 
@@ -704,9 +702,27 @@
     .response__box {
       .response__title {
         color: @color_primary;
+        text-shadow: 0 1px 3px #cccccc, 0 2px 2px #c9c9c9, 0 3px 2px #bbbbbb, 0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 
         .title-response__flow {
           color: @color_secondary-dark;
+          left: -30px;
+          bottom: 0px;
+          align-self: center;
+          margin-top: -18px;
+          transition: all 0.3s ease;
+          transform: rotateX(0deg) rotateZ(0deg);
+          font-family: Impact, Charcoal, sans-serif;
+          font-size: 100px;
+          letter-spacing: 3px;
+          text-shadow: 0 1px 5px #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
         }
       }
       .response__paragraph {
@@ -726,9 +742,17 @@
             font-size: 120px;
             color: @color_secondary-dark;
             z-index: -1;
+            text-shadow: 0 0px 3px #cccccc, 0 0 0 #c9c9c9, 0 0 0 #bbbbbb, 0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
           }
           h3 {
             color: @color_primary;
+            text-shadow: 0 2px 2px #cccccc, 0 0px 1px #c9c9c9, 0 0px 1px #bbbbbb, 0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
           }
           p {
             color: @color_light-grey;
@@ -742,6 +766,33 @@
   }
   .response__blog {
     background-color: @color_body;
+
+    .response__title {
+      color: @color_secondary;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 6px 1px rgba(0, 0, 0, 0.1),
+        0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+
+      .title-response__flow {
+        color: @color_white;
+        left: -30px;
+        bottom: 0px;
+        align-self: center;
+        margin-top: -18px;
+        transition: all 0.3s ease;
+        transform: rotateX(0deg) rotateZ(0deg);
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 100px;
+        letter-spacing: 3px;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb,
+          0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
     .blog-slider__list {
       display: flex;
 
