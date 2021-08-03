@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подписка На eFrame</title>
+</head>
+<body>
+    <main>
+         <div class="response__price" id="price">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                    </h2>
+                    <div class="price__box">
+                        <div class="price__item">
+                            <div class="price__plan">
+                                <img src="https://i.piccy.info/i9/bc0df004ac5f0808006c4f798d3f242f/1627898275/33463/1437528/7060android_chrome_512x512.png" class="price__plan_illustration" alt="логотип eframe">
+                                <h1 class="price__plan_title">Подпишись</h1>
+                                <div class="price__plan_cost">
+                                    Успей получить тестовый доступ к eFrame
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            <p class="response__paragraph">
+                                eFrame — это онлайн сервис для блогеров и монтажеров, который создаст крутое превью для вашего видео на Ютуб за пару кликов!
+                            </p>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li> 
+                            <p>
+                                Ниже напиши Email и мы в скором времени вышлем ссылку на тестовый доступ.
+                            </p>
+                            <ul class="price__benefits">
+                                <form method="POST"  action="index.html" id="Form_ProductHunt">
+                                    <input type="email" name="email" placeholder="preview@eframe.me" autocomplete="email" required />
+                                    <input type="hidden" name="price" value="0">
+                                    <input type="submit" value="ХОЧУ!" class="button" />
+                                </form>
+                                <br>
+                            </ul>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="https://t.me/eproves" rel="nofollow" class="social__item_telegram" target="_blank"></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="mailto:eframe.preview@gmail.com" class="social__item_email"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <div class="content">
+            <h3>Эй, музыка есть? А если найду?</h3>
+            <p>
+                На сайте ведутся технические работы.<br>
+                Попробуйте зайти чуть позже!
+            </p>
+        </div> -->
+    </main>
+
+     <!-- CSS files -->
+    <style>
+        .free {
+  color: #339933 !important;
+}
+.close {
+  color: #ef1c26 !important;
+}
+.hidden {
+  display: none;
+}
+.item-blog__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 160px;
+  height: 100%;
+  background-color: #ff5107;
+  overflow: hidden;
+}
+.item-blog__image img {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.item-blog__image .material-icons {
+  font-size: 90px;
+}
+.mark {
+  color: #ff5107;
+}
+.selection {
+  background-color: #ff5107;
+}
+strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.button {
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@-webkit-keyframes rotateLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotateLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 94vh;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .logo img {
+  height: 300px;
+}
+main .content {
+  margin: 10px 0;
+}
+main .content img {
+  height: 300px;
+}
+main .content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+main .content p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+main .button {
+  background: #ff5107;
+}
+main .response__price {
+  margin: 0;
+}
+main .response__price .response__box .response__title {
+  color: #ff5107;
+}
+main .response__price .response__box .response__title .title-response__flow {
+  color: #333;
+}
+main .response__price .response__box .response__paragraph {
+  color: #111111;
+}
+main .response__price .response__box .price__benefits_item {
+  display: inline;
+  margin-top: 50px;
+}
+main .response__price .response__box .price__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+main .response__price .response__box .price__box .price__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 350px;
+  margin: 0 15px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px #555555, 0 0 0 #555555, 0 0 0 #555555, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px #555555, 0 0 0 #555555, 0 0 0 #555555, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+main .response__price .response__box .price__box .price__item .price__plan {
+  text-align: center;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_illustration {
+  height: 250px;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_cost {
+  position: relative;
+  font-size: 17px;
+  font-weight: 900;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_cost .cost--line-throught {
+  position: relative;
+  color: #cccccc;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_cost .cost--line-throught::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  display: block;
+  width: 90%;
+  height: 5px;
+  background-color: #339933;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_cost .cost--month {
+  font-size: 16px;
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__plan .price__plan_cost .cost--forever {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+  color: #222222;
+}
+main .response__price .response__box .price__box .price__item .price__benefits .benefits--empty {
+  color: #cccccc;
+}
+main .response__price .response__box .price__box .price__item .price__benefits .price__benefits--warning {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #cccccc;
+  border: none;
+  overflow: hidden;
+  resize: none;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 20px #555555, 0 0 0 #555555, 0 0 0 #555555, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px #555555, 0 0 0 #555555, 0 0 0 #555555, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"]::-webkit-input-placeholder {
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"]:-ms-input-placeholder {
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"]::-ms-input-placeholder {
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item .price__benefits form input[type="email"]::placeholder {
+  color: #555555;
+}
+main .response__price .response__box .price__box .price__item hr {
+  margin: 10px 0;
+  margin-bottom: 0;
+  height: 5px;
+  background: #111111;
+  border: none;
+}
+main .response__price .response__box .price__box .price__item .hr_mini {
+  margin: 10px 0;
+  margin-bottom: 0;
+  padding: 0px;
+  height: 1px;
+  background: #111111;
+  border: none;
+}
+main .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none;
+}
+main .social .social__item a {
+  padding: 20px 0;
+  padding-left: 50px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+main .social .social__item:first-child a {
+  margin: 0;
+}
+main .social .social__item_instragram {
+  background-image: url("../images/icons/instagram.png");
+}
+main .social .social__item_telegram {
+  background-image: url("../images/icons/telegram.png");
+}
+main .social .social__item_youtube {
+  background-image: url("../images/icons/youtube.png");
+}
+main .social .social__item_email {
+  background-image: url("../images/icons/email.png");
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/parking.css">
+</body>
+</html>

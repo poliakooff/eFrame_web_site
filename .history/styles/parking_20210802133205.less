@@ -1,0 +1,84 @@
+@import "variables";
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 94vh;
+    padding: 15px;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        img {
+            height: 300px;
+        }
+    }
+    .content {
+        margin: 10px 0;
+
+        img {
+            height: 300px;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+        p {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+    
+        .social__item a {
+            padding: 20px 0;
+            padding-left: 50px;
+            margin-left: 20px;
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            background-size: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+        }
+        .social__item:first-child a {
+            margin: 0;
+        }
+    
+        .social__item_instragram {
+            background-image: url('../images/icons/instagram.png');
+        }
+        .social__item_telegram {
+            background-image: url('../images/icons/telegram.png');
+        }
+        .social__item_youtube {
+            background-image: url('../images/icons/youtube.png');
+        }
+        .social__item_email {
+            background-image: url('../images/icons/email.png');
+        }
+    }
+}
+
+@media (max-width: 862px) {
+
+}

@@ -1,0 +1,242 @@
+@import "variables";
+body {
+  margin: 0;
+//   background-image: url(/MyCollages.jpg);
+//   background-size: 200px;
+background-color: @color_body;
+}
+
+main {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 94vh;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    img {
+      height: 300px;
+    }
+  }
+  .content {
+    margin: 10px 0;
+
+    img {
+      height: 300px;
+    }
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+    }
+    p {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+    }
+  }
+  
+  .button {
+    background: @color_primary;
+}
+
+  .response__price {
+    margin: 0;
+    .response__box {
+      .response__title {
+        color: @color_primary;
+
+        .title-response__flow {
+          color: #333;
+        }
+      }
+      .response__paragraph {
+        color: @color_secondary-dark;
+      }
+
+      .price__benefits_item {
+          dis
+      }
+
+      .price__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+        .price__item {
+          flex-grow: 1;
+          max-width: 350px;
+          margin: 0 15px;
+          margin-top: 30px;
+          padding: 10px;
+          background-color: @color_white;
+          overflow: hidden;
+          box-shadow: 0 0 20px @color_dark-grey, 0 0 0 @color_dark-grey, 0 0 0 @color_dark-grey,
+            0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+            0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+            0 20px 20px rgba(0, 0, 0, 0.15);
+            
+
+          .price__plan {
+            text-align: center;
+
+            .price__plan_illustration {
+              height: 250px;
+            }
+            .price__plan_cost {
+              position: relative;
+              font-size: 17px;
+              font-weight: 900;
+
+              .cost--line-throught {
+                position: relative;
+                color: @color_light-grey;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 22px;
+                  display: block;
+                  width: 90%;
+                  height: 5px;
+                  background-color: @color_green;
+                }
+              }
+              .cost--month {
+                font-size: 16px;
+                color: @color_dark-grey;
+              }
+              .cost--forever {
+                position: absolute;
+                bottom: 0;
+                left: 40%;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: italic;
+                color: @color_dark-grey;
+              }
+            }
+          }
+          .price__benefits {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-weight: 700;
+            color: @color_secondary;
+
+            .price__benefits_item {
+              margin-top: 10px;
+              padding: 10px 0;
+            }
+            .benefits--empty {
+              color: @color_light-grey;
+            }
+            .price__benefits--warning {
+              margin: 10px 0;
+              font-size: 14px;
+              color: @color_dark-grey;
+            }
+
+            form {
+              display: flex;
+              width: 100%;
+
+              input[type="email"] {
+                display: flex;
+                width: 100%;
+                height: 24px;
+                min-height: 24px;
+                max-height: 24px;
+                padding: 8px;
+                font-size: 14px;
+                font-weight: 700;
+                background-color: @color_light-grey;
+                border: none;
+                overflow: hidden;
+                resize: none;
+                
+
+                &:focus {
+                  outline: none;
+                  box-shadow: 0 0 20px @color_dark-grey, 0 0 0 @color_dark-grey, 0 0 0 @color_dark-grey,
+            0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(163, 58, 58, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+            0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+            0 20px 20px rgba(0, 0, 0, 0.15);
+                }
+                
+                &::placeholder {
+                  color: @color_dark-grey;
+                }
+              }
+            }
+          }
+          hr {
+            margin: 10px 0;
+            margin-bottom: 0;
+            height: 5px;
+            background: @color_secondary-dark;
+            border: none;
+          }
+          .hr_mini {
+            margin: 30px 0;
+            margin-bottom: 0;
+            padding: 0px;
+            height: 1px;
+            background: @color_secondary-dark;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+
+    .social__item a {
+      padding: 20px 0;
+      padding-left: 50px;
+      margin-left: 20px;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: 50px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+    }
+    .social__item:first-child a {
+      margin: 0;
+    }
+
+    .social__item_instragram {
+      background-image: url("../images/icons/instagram.png");
+    }
+    .social__item_telegram {
+      background-image: url("../images/icons/telegram.png");
+    }
+    .social__item_youtube {
+      background-image: url("../images/icons/youtube.png");
+    }
+    .social__item_email {
+      background-image: url("../images/icons/email.png");
+    }
+  }
+}
+
+@media (max-width: 862px) {
+}

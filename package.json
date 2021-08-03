@@ -1,0 +1,27 @@
+{
+  "name": "eframe_web_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mailer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mailer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redliz7/eFrame_web_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redliz7/eFrame_web_site/issues"
+  },
+  "homepage": "https://github.com/redliz7/eFrame_web_site#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "form-data": "^4.0.0",
+    "module_name": "^1.0.0",
+    "nodemailer": "^6.6.3"
+  }
+}

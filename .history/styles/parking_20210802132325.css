@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 94vh;
+  padding: 15px;
+}
+main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .logo img {
+  height: 300px;
+}
+
+main .content {
+  margin: 10px 0;
+}
+main .content img {
+  height: 300px;
+}
+main .content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+main .content p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+main .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none;
+}
+main .social .social__item a {
+  padding: 20px 0;
+  padding-left: 50px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+main .social .social__item:first-child a {
+  margin: 0;
+}
+main .social .social__item_instragram {
+  background-image: url('../images/icons/instagram.png');
+}
+main .social .social__item_telegram {
+  background-image: url('../images/icons/telegram.png');
+}
+main .social .social__item_youtube {
+  background-image: url('../images/icons/youtube.png');
+}
+main .social .social__item_email {
+  background-image: url('../images/icons/email.png');
+}
