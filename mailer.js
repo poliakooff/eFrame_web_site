@@ -18,8 +18,6 @@ let result = transporter.sendMail({
     to: 'eframe.thumbnail@gmail.com',
     subject: '+1 Подписка на тестовый доступ — eframe.me',
     text: '+1 подписчик на тестовый доступ проекта eframe.me #eframetestaccess'
-
-    login:
   })
   
   console.log(result)

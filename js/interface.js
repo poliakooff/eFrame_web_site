@@ -189,6 +189,7 @@ $(function () {
     // УКРОК Js
 
     // конец строки
+    
     //#### Change language
     $('.scroll-to-language').on('click', function() {
         var destination = $('.language').offset().top;

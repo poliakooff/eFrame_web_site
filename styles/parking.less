@@ -1,15 +1,12 @@
 @import "variables";
 body {
   margin: 0;
-  //   background-image: url(/MyCollages.jpg);
-  //   background-size: 200px;
   background-color: @color_body;
 }
 
 main {
   flex-direction: column;
   justify-content: space-between;
-  height: 94vh;
   font-family: "Roboto", sans-serif;
   text-align: center;
 
@@ -61,25 +58,24 @@ main {
 
       .price__benefits_item {
         display: inline;
-        margin-top: 50px;
       }
 
       .price__box {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin: 20px 0 50px 0;
 
         .price__item {
           flex-grow: 1;
           max-width: 350px;
-          margin: 0 15px;
+          
           margin-top: 30px;
           padding: 10px;
           background-color: @color_white;
           overflow: hidden;
-          box-shadow: 0 0 20px @color_dark-grey, 0 0 0 @color_dark-grey,
-            0 0 0 @color_dark-grey, 0 6px 1px rgba(0, 0, 0, 0.1),
+          box-shadow: 5px 5px 10px @color_black, 0 0 0 @color_black,
+            0 0 0 @color_black, 0 6px 1px rgba(0, 0, 0, 0.1),
             0 0 5px rgba(163, 58, 58, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
             0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
             0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -91,6 +87,7 @@ main {
               height: 250px;
             }
             .price__plan_cost {
+              margin-bottom: 0;
               position: relative;
               font-size: 17px;
               font-weight: 900;
@@ -177,18 +174,18 @@ main {
             }
           }
           hr {
-            margin: 10px 0;
-            margin-bottom: 0;
+            margin: 10px;
+            margin-bottom: 20px;
             height: 5px;
             background: @color_secondary-dark;
             border: none;
           }
           .hr_mini {
-            margin: 10px 0;
+            margin: 10px 100px;
             margin-bottom: 0;
             padding: 0px;
             height: 1px;
-            background: @color_secondary-dark;
+            background: @color_primary;
             border: none;
           }
         }
