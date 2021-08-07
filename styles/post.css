@@ -189,6 +189,7 @@ strong {
   font-style: normal;
 }
 .post-content .post-content__box .content-wrap em {
+  text-align: center;
   color: #555555;
 }
 .post-content .post-content__box .content-wrap a {

@@ -16,6 +16,10 @@ main {
     align-items: center;
   }
 
+  a {
+    font-weight: bold;
+  }
+
   .logo {
     img {
       height: 300px;
@@ -32,7 +36,6 @@ main {
       font-weight: 900;
     }
     p {
-      margin: 0;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
     }
@@ -64,13 +67,12 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 20px 0 50px 0;
+        margin: 50px 0 50px 0;
 
         .price__item {
+          margin: 20px;
           flex-grow: 1;
           max-width: 350px;
-          
-          margin-top: 30px;
           padding: 10px;
           background-color: @color_white;
           overflow: hidden;
@@ -174,19 +176,22 @@ main {
             }
           }
           hr {
-            margin: 10px;
             margin-bottom: 20px;
             height: 5px;
             background: @color_secondary-dark;
             border: none;
           }
           .hr_mini {
-            margin: 10px 100px;
-            margin-bottom: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
             padding: 0px;
-            height: 1px;
-            background: @color_primary;
+            height: 2px;
+            background: @color_light-grey;
             border: none;
+          }
+          .form_paragraph{
+            margin-top: 0px;
+            color: @color_dark-grey;
           }
         }
       }

@@ -482,6 +482,7 @@ footer .footer__box a {
     width: 250px;
     height: initial !important;
     background: #ffffff;
+    overflow: hidden;
   }
   header .header__box .header__nav .menu::before {
     top: 60px;

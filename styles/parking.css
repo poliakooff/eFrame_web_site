@@ -103,6 +103,9 @@ main > div {
       -ms-flex-align: center;
           align-items: center;
 }
+main a {
+  font-weight: bold;
+}
 main .logo img {
   height: 300px;
 }
@@ -117,7 +120,6 @@ main .content h1 {
   font-weight: 900;
 }
 main .content p {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -148,14 +150,14 @@ main .response__price .response__box .price__box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 0 50px 0;
+  margin: 50px 0 50px 0;
 }
 main .response__price .response__box .price__box .price__item {
+  margin: 20px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 350px;
-  margin-top: 30px;
   padding: 10px;
   background-color: #ffffff;
   overflow: hidden;
@@ -257,19 +259,22 @@ main .response__price .response__box .price__box .price__item .price__benefits f
   color: #555555;
 }
 main .response__price .response__box .price__box .price__item hr {
-  margin: 10px;
   margin-bottom: 20px;
   height: 5px;
   background: #111111;
   border: none;
 }
 main .response__price .response__box .price__box .price__item .hr_mini {
-  margin: 10px 100px;
-  margin-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding: 0px;
-  height: 1px;
-  background: #ff5107;
+  height: 2px;
+  background: #cccccc;
   border: none;
+}
+main .response__price .response__box .price__box .price__item .form_paragraph {
+  margin-top: 0px;
+  color: #555555;
 }
 main .social {
   display: -webkit-box;
