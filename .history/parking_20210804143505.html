@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подписка На eFrame</title>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <div class="header__box wrap">
+                <div class="header__logo">
+                    <a href="parking.html">
+                        <img src="images/icons/logotype.png" alt="eFrame логотип" />
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <div class="menu--toggle">МЕНЮ</div>
+                    <ul class="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li class="menu__item">
+                            <a itemprop="url" href="how_to_create_a_preview_for_youtube.html">КАК РАБОТАЕТ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a itemprop="url" href="blog.html">БЛОГ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+         <div class="response__price" id="price">
+                <div class="response__box wrap">
+                    <h2 class="response__title title-response">
+                    </h2>
+                    <div class="price__box">
+                        <div class="price__item">
+                            <div class="price__plan">
+                                <img src="https://i.piccy.info/i9/bc0df004ac5f0808006c4f798d3f242f/1627898275/33463/1437528/7060android_chrome_512x512.png" class="price__plan_illustration" alt="логотип eframe">
+                                <h1 class="price__plan_title">Подпишись</h1>
+                                <div class="price__plan_cost">
+                                    Успей получить тестовый доступ к eFrame
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            <p class="response__paragraph">
+                                eFrame — это онлайн сервис для блогеров и монтажеров, который создаст крутое превью для вашего видео на Ютуб за пару кликов!
+                            </p>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li>
+                            <li class="price__benefits_item">&#10033;</li> 
+                            <p>
+                                Ниже напиши Email и мы в скором времени вышлем ссылку на тестовый доступ.
+                            </p>
+                            <ul class="price__benefits">
+                                <form method="POST"  action="parking.html" id="form_subscription">
+                                    <input type="email" name="email" placeholder="thumbnail@eframe.me" autocomplete="email" required />
+                                    <input type="hidden" name="price" value="0">
+                                    <input type="submit" value="ХОЧУ!" class="button" />
+                                </form>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <div class="content">
+            <h3>Эй, музыка есть? А если найду?</h3>
+            <p>
+                На сайте ведутся технические работы.<br>
+                Попробуйте зайти чуть позже!
+            </p>
+        </div> -->
+    </main>
+
+    <footer itemtype="http://schema.org/WPFooter">
+        <div class="footer__box wrap">
+            <div class="footer__basic basic-footer">
+                <div class="basic-footer__logo">
+                    <a href="parking.html">
+                        <img src="images/icons/logotype.png" class="basic-footer__img" alt="eframe логотип">
+                    </a>
+                    <span class="basic-footer__copyright">Все права защищены 2021 ©</span>
+                    <meta itemprop="copyrightYear" content="2020">
+                    <meta itemprop="copyrightHolder" content="eFrame.me">
+                </div>
+                <a href="#header" class="basic-footer__scroll-to-up">НАВЕРХ</a>
+            </div>
+            <!-- <ul class="language">
+                <li class="language__item">
+                    <a href="/" data-lang="en">ENGLISH</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="uk">УКРАЇНСЬКА</a>
+                </li>
+                <li class="language__item lang--current">
+                    <a href="/" data-lang="ru">РУССКИЙ</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="es">ESPANOL</a>
+                </li>
+                <li class="language__item">
+                    <a href="/" data-lang="de">DEUTCHLAND</a>
+                </li>
+            </ul> -->
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://t.me/eframe_me" rel="nofollow" class="social__item_telegram" target="_blank">TELEGRAM</a>
+                </li>
+                <li class="social__item">
+                    <a href="mailto:eframe.thumbnail@gmail.com" class="social__item_email">EMAIL</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+     <!-- CSS files -->
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/parking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <script src="mailer.js"></script>
+    <script src="js/interface.js"></script>
+</body>
+</html>
